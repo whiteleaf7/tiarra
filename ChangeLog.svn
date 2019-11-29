@@ -1,0 +1,2753 @@
+------------------------------------------------------------------------
+r36726 | topia | 2010-02-12 03:33:27 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+update documentation.
+------------------------------------------------------------------------
+r36725 | topia | 2010-02-12 03:33:02 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+
+make it worked with old configuration module.
+------------------------------------------------------------------------
+r36724 | topia | 2010-02-12 03:28:00 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/NEWS
+
+write NEWS to release archive.
+------------------------------------------------------------------------
+r36723 | topia | 2010-02-12 03:26:27 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+
+add comment about irc.juggler.jp.
+------------------------------------------------------------------------
+r36722 | topia | 2010-02-12 03:25:53 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+
+use general configuration entry.
+------------------------------------------------------------------------
+r36721 | topia | 2010-02-12 03:18:25 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+
+add documentation for general/join-{interval,channels-per-command}.
+------------------------------------------------------------------------
+r36720 | topia | 2010-02-12 03:13:54 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Configuration.pm
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+
+add interval config entry for rejoin channels at network reconnected.
+------------------------------------------------------------------------
+r36719 | topia | 2010-02-12 02:24:01 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/doc-src/module-group.tdoc
+   M /lang/perl/tiarra/trunk/sample.conf
+
+update documentation.
+------------------------------------------------------------------------
+r36718 | topia | 2010-02-12 02:21:29 +0900 (Fri, 12 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Rejoin.pm
+   A /lang/perl/tiarra/trunk/module/Network
+   A /lang/perl/tiarra/trunk/module/Network/Freenode.pm
+
+add chanserv-controlled channel handling to Channel::Rejoin, and add Network::Freenode for discover chanserv-controlled channel.
+------------------------------------------------------------------------
+r36709 | topia | 2010-02-11 19:47:42 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+update documentation.
+------------------------------------------------------------------------
+r36708 | syo68k | 2010-02-11 19:23:54 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+
+Channel::Join::Connect::interval追加
+------------------------------------------------------------------------
+r36707 | syo68k | 2010-02-11 19:22:35 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+
+intervalの説明について微修正
+------------------------------------------------------------------------
+r36687 | topia | 2010-02-11 05:27:11 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+
+add interval configuration entry.
+------------------------------------------------------------------------
+r36686 | topia | 2010-02-11 03:47:59 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Log.html
+   M /lang/perl/tiarra/trunk/module/Log/Channel.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+
+fix documentation.
+------------------------------------------------------------------------
+r36685 | klm | 2010-02-11 03:35:23 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Log/Channel.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+
+a new variable lc_channel is available for unifying log directories of Log::Channel in case-sensitive filesystems.
+------------------------------------------------------------------------
+r36684 | topia | 2010-02-11 03:20:57 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/NEWS
+
+write NEWS to release archive.
+------------------------------------------------------------------------
+r36683 | topia | 2010-02-11 02:15:44 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+
+backout r36679: 修正の意図が分かりかねますので問題となる状況を教えていただけないでしょうか
+------------------------------------------------------------------------
+r36682 | topia | 2010-02-11 02:06:17 +0900 (Thu, 11 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Rejoin.pm
+
+discard continuous rejoin.
+------------------------------------------------------------------------
+r36679 | syo68k | 2010-02-10 23:28:06 +0900 (Wed, 10 Feb 2010) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+
+多数のチャンネルにJOINした場合にExcessFloodで落とされる場合があるのを修正(thx.Kazubu)
+------------------------------------------------------------------------
+r36552 | drry | 2010-01-27 23:53:29 +0900 (Wed, 27 Jan 2010) | 5 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc-src/all.conf.in
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/mini.conf
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+   M /lang/perl/tiarra/trunk/module/Client/Guess.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+
+サーバアドレスを更新しました。
+正規表現を修正しました。
+設定のネットワーク定義例に freenode と Ustream を追加してみました。
+設定サンプルでサーバが送受信する文字コードを UTF-8 ベースに変更し、IRCnet と 2ch に JIS を指定しました。(Windows 版 LimeChat 2 向け)
+
+------------------------------------------------------------------------
+r35634 | topia | 2009-10-19 01:17:48 +0900 (Mon, 19 Oct 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/NEWS
+
+write NEWS to release archive.
+------------------------------------------------------------------------
+r35621 | topia | 2009-10-16 20:28:45 +0900 (Fri, 16 Oct 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+Auto::Notify (send_im_kayac): accept more-relaxed result.
+Auto::Im: implement post result check.
+------------------------------------------------------------------------
+r35566 | topia | 2009-10-09 23:53:58 +0900 (Fri, 09 Oct 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/TerminateManager.pm
+   M /lang/perl/tiarra/trunk/tiarra
+
+forking with running threads is totally bad idea; hack to shutdown threads before fork.
+------------------------------------------------------------------------
+r35459 | topia | 2009-09-23 23:23:50 +0900 (Wed, 23 Sep 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+check API response after posting notify.
+------------------------------------------------------------------------
+r34672 | drry | 2009-07-29 12:18:07 +0900 (Wed, 29 Jul 2009) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/main/Template.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+
+ * added `svn:ignore` property.
+ * documentation.
+
+------------------------------------------------------------------------
+r34388 | topia | 2009-07-11 12:54:44 +0900 (Sat, 11 Jul 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+fix mirc text-formatting remove code.
+
+------------------------------------------------------------------------
+r34369 | topia | 2009-07-09 02:58:50 +0900 (Thu, 09 Jul 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+oops. add /g option.
+
+------------------------------------------------------------------------
+r34368 | topia | 2009-07-09 02:29:18 +0900 (Thu, 09 Jul 2009) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+strip mirc text formatting before send to im.kayac.com / prowl.weks.net.
+and fix small error on tiarradoc.
+
+------------------------------------------------------------------------
+r34367 | topia | 2009-07-09 01:53:49 +0900 (Thu, 09 Jul 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+add some example.
+
+------------------------------------------------------------------------
+r34366 | topia | 2009-07-09 01:41:15 +0900 (Thu, 09 Jul 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+fix bug and support global format (and local override).
+
+------------------------------------------------------------------------
+r34365 | topia | 2009-07-09 01:33:28 +0900 (Thu, 09 Jul 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+support multiple 'blocks' entry.
+
+------------------------------------------------------------------------
+r34364 | topia | 2009-07-09 00:57:36 +0900 (Thu, 09 Jul 2009) | 7 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Auto/Notify.pm
+
+initial add to Auto::Notify, supports im.kayac.com (same as
+Auto::Im) and prowl.weks.net.
+
+Known problem:
+ * prowl: verify implemented, but not tested.
+ * response is not checked at all.
+
+------------------------------------------------------------------------
+r33938 | topia | 2009-06-13 17:20:02 +0900 (Sat, 13 Jun 2009) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+implements randomization of connection order (aka. DNS Round-robin) for Tiarra::Socket::Connect.
+
+see also: http://d.hatena.ne.jp/JULY/20090612/p1
+
+------------------------------------------------------------------------
+r33908 | topia | 2009-06-12 00:22:07 +0900 (Fri, 12 Jun 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+fix help string of --quiet for clarification.
+
+------------------------------------------------------------------------
+r33535 | topia | 2009-05-24 02:28:58 +0900 (Sun, 24 May 2009) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Rejoin.pm
+
+Support rejoin with a channel can't get +b/+e/+I list without operator
+privilege, but requires r33534's change.
+
+------------------------------------------------------------------------
+r33534 | topia | 2009-05-24 01:28:57 +0900 (Sun, 24 May 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Multicast.pm
+
+handle multicast on more error replies.
+
+------------------------------------------------------------------------
+r33290 | topia | 2009-05-14 03:10:09 +0900 (Thu, 14 May 2009) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Rejoin.pm
+
+re-check channel status before send part-and-join.
+(but test is not done...)
+
+------------------------------------------------------------------------
+r33115 | topia | 2009-05-07 02:55:44 +0900 (Thu, 07 May 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Configuration/Preprocessor.pm
+
+fix to discard undefined warning.
+
+------------------------------------------------------------------------
+r32571 | hio | 2009-04-18 13:59:26 +0900 (Sat, 18 Apr 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/module/Auto/Calc.pm
+
+Auto::Calc, 全角空白での区切りに対応.
+
+------------------------------------------------------------------------
+r32570 | hio | 2009-04-18 13:57:59 +0900 (Sat, 18 Apr 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+見出し取得更新.
+
+------------------------------------------------------------------------
+r32465 | hio | 2009-04-16 00:51:00 +0900 (Thu, 16 Apr 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+LWPなかったときにAUで認証できないのに対応.
+
+------------------------------------------------------------------------
+r32463 | hio | 2009-04-16 00:08:31 +0900 (Thu, 16 Apr 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+バグ修正.
+
+------------------------------------------------------------------------
+r31673 | hio | 2009-03-29 21:24:29 +0900 (Sun, 29 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Log/Logger.pm
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, NOTICE対応.
+
+------------------------------------------------------------------------
+r31645 | hio | 2009-03-28 23:40:50 +0900 (Sat, 28 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+DEBUG消し忘れ.
+
+------------------------------------------------------------------------
+r31644 | hio | 2009-03-28 23:37:52 +0900 (Sat, 28 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+Mixiのアルバム情報をとれなかったのを修正.
+
+------------------------------------------------------------------------
+r31557 | topia | 2009-03-25 22:32:21 +0900 (Wed, 25 Mar 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/OptionalModules.pm
+
+permit to disable some optional feature from environment variables.
+------------------------------------------------------------------------
+r31269 | topia | 2009-03-16 02:39:02 +0900 (Mon, 16 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Client.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+
+regen documentation.
+Client::SingleServer は Multicast の実装状況から考えると無理すぎると分かったのでなかったことに。
+------------------------------------------------------------------------
+r31268 | topia | 2009-03-16 02:38:14 +0900 (Mon, 16 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Multicast.pm
+
+fix some detach handler.
+
+------------------------------------------------------------------------
+r31267 | topia | 2009-03-16 02:08:00 +0900 (Mon, 16 Mar 2009) | 1 line
+Changed paths:
+   D /lang/perl/tiarra/trunk/module/Client/SingleServer.pm
+
+全然動いてないのでとりあえず削除
+------------------------------------------------------------------------
+r31259 | topia | 2009-03-15 21:58:35 +0900 (Sun, 15 Mar 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Client.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module/UNCLASSIFIED.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+update documentation.
+------------------------------------------------------------------------
+r31258 | topia | 2009-03-15 21:58:10 +0900 (Sun, 15 Mar 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/HACKING
+   M /lang/perl/tiarra/trunk/main/Module.pm
+   A /lang/perl/tiarra/trunk/module/Skeleton.pm (from /lang/perl/tiarra/trunk/module/Skelton.pm:31257)
+   D /lang/perl/tiarra/trunk/module/Skelton.pm
+
+fix typo Skelton -> Skeleton.
+------------------------------------------------------------------------
+r31257 | topia | 2009-03-15 21:53:34 +0900 (Sun, 15 Mar 2009) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Client/SingleServer.pm
+
+add initial version of Client::SingleServer.
+
+------------------------------------------------------------------------
+r31256 | hio | 2009-03-15 20:49:11 +0900 (Sun, 15 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, URLエスケープがなくなっていたのを修正.
+
+------------------------------------------------------------------------
+r31242 | hio | 2009-03-15 18:01:19 +0900 (Sun, 15 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, version 0.07.
+
+------------------------------------------------------------------------
+r31241 | hio | 2009-03-15 17:59:02 +0900 (Sun, 15 Mar 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, shared-modeでもJOINは可能に. 退室状態での表示を改善.
+
+------------------------------------------------------------------------
+r31238 | hio | 2009-03-15 14:57:24 +0900 (Sun, 15 Mar 2009) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, shared-mode時はpart/join/deleteを使えないように修正.
+topicが変わってないときは何もしないように修正.
+
+------------------------------------------------------------------------
+r30026 | topia | 2009-02-14 03:32:10 +0900 (Sat, 14 Feb 2009) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+
+networks/action-when-disconnected の説明を微修正。
+* 推奨値とデフォルト値が別々になっているだけなのだが、
+  わかりにくいので「省略時の」を足した。
+
+------------------------------------------------------------------------
+r29652 | topia | 2009-02-06 22:55:13 +0900 (Fri, 06 Feb 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Configuration.pm
+
+fix nick-fix-mode default value handling.
+
+------------------------------------------------------------------------
+r29651 | topia | 2009-02-06 22:44:53 +0900 (Fri, 06 Feb 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/User/Nick/Detached.pm
+
+use BulletinBoard to work with single-server-mode.
+
+------------------------------------------------------------------------
+r29425 | drry | 2009-02-02 15:17:32 +0900 (Mon, 02 Feb 2009) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/ChangeLog
+   M /lang/perl/tiarra/trunk/doc/module/UNCLASSIFIED.html
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+   M /lang/perl/tiarra/trunk/module/Skelton.pm
+
+ * added the `svn:mime-type` property.
+ * fixed typos.
+ * et cetera.
+
+------------------------------------------------------------------------
+r29317 | topia | 2009-01-31 01:02:07 +0900 (Sat, 31 Jan 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Encoding.pm
+
+cache encoding driver load failure result.
+
+------------------------------------------------------------------------
+r28633 | takano32 | 2009-01-19 04:49:53 +0900 (Mon, 19 Jan 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+Im.pm: UTF-8 BOM => UTF-8N
+------------------------------------------------------------------------
+r28632 | takano32 | 2009-01-19 03:59:58 +0900 (Mon, 19 Jan 2009) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+Im.pm: UTF-8N => UTF-8 BOM
+------------------------------------------------------------------------
+r28573 | topia | 2009-01-18 03:01:46 +0900 (Sun, 18 Jan 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Client.pm
+
+remove unnecessary warning.
+
+------------------------------------------------------------------------
+r28572 | topia | 2009-01-18 03:00:30 +0900 (Sun, 18 Jan 2009) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+SIGPIPE must be ignored.
+
+------------------------------------------------------------------------
+r24729 | hio | 2008-11-24 16:01:17 +0900 (Mon, 24 Nov 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+fetchtitle.mixi, ログインエラーの検出. エラーメッセージを日本語に＆設定で変えれるように.
+------------------------------------------------------------------------
+r24519 | topia | 2008-11-21 00:49:39 +0900 (Fri, 21 Nov 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Outputz.pm
+
+fix config reloading issue.
+
+------------------------------------------------------------------------
+r24357 | topia | 2008-11-20 00:22:57 +0900 (Thu, 20 Nov 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+
+update documentation.
+------------------------------------------------------------------------
+r24356 | topia | 2008-11-20 00:22:08 +0900 (Thu, 20 Nov 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Outputz.pm
+
+explain command configuration.
+small style fix.
+change sample 'channel'.
+
+------------------------------------------------------------------------
+r24347 | topia | 2008-11-19 23:45:12 +0900 (Wed, 19 Nov 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Configuration/Preprocessor.pm
+
+added support to @elsifdef/@elsifndef.
+fix drop condition of nested @if.
+
+------------------------------------------------------------------------
+r24337 | topia | 2008-11-19 22:31:45 +0900 (Wed, 19 Nov 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+commit documentation.
+------------------------------------------------------------------------
+r24336 | topia | 2008-11-19 22:31:28 +0900 (Wed, 19 Nov 2008) | 1 line
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Auto/Outputz.pm
+
+initial version of Auto::Outputz.
+------------------------------------------------------------------------
+r22785 | hio | 2008-11-05 22:45:32 +0900 (Wed, 05 Nov 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+zakzakの見出し位置が変わっていたのに対応.
+
+------------------------------------------------------------------------
+r20015 | hio | 2008-09-27 11:45:04 +0900 (Sat, 27 Sep 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+血液型ゲノムの見出し抽出を追加.
+
+------------------------------------------------------------------------
+r20013 | hio | 2008-09-27 11:24:28 +0900 (Sat, 27 Sep 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/TouhouReplay.pm
+
+FetchTitle/TouhouReply, 取得サイズの制限を緩和.
+
+------------------------------------------------------------------------
+r20011 | hio | 2008-09-27 11:23:06 +0900 (Sat, 27 Sep 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+mixiログイン微調整.
+
+------------------------------------------------------------------------
+r20009 | hio | 2008-09-27 11:20:10 +0900 (Sat, 27 Sep 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+ドキュメント調整.
+
+------------------------------------------------------------------------
+r17280 | hio | 2008-08-09 12:43:15 +0900 (Sat, 09 Aug 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle, スベシ診断とゴディバの抽出.
+
+------------------------------------------------------------------------
+r16813 | hio | 2008-07-29 23:28:13 +0900 (Tue, 29 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle, 見出し抽出追加(nintendo)
+
+------------------------------------------------------------------------
+r16779 | hio | 2008-07-28 22:53:40 +0900 (Mon, 28 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle, 見出し抽出追加.
+
+------------------------------------------------------------------------
+r16714 | hio | 2008-07-27 23:52:47 +0900 (Sun, 27 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle, 見出し抽出の追加.
+
+------------------------------------------------------------------------
+r16148 | drry | 2008-07-24 01:29:52 +0900 (Thu, 24 Jul 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+ * 正規表現を修正しました。
+ * HTTP を優先するように変更しました。
+
+------------------------------------------------------------------------
+r15771 | drry | 2008-07-14 08:55:21 +0900 (Mon, 14 Jul 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/doc-src/README
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/doc-src/sample.conf.in
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+   M /lang/perl/tiarra/trunk/module/CTCP/DCC/RewriteAddress.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Ignore.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+
+ * Auto::FetchTitle: fixed regexps.
+ * whitespace changes.
+ * et cetera.
+
+------------------------------------------------------------------------
+r15736 | hio | 2008-07-13 15:15:20 +0900 (Sun, 13 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+FetchTitle, コメント内は無視するように.
+
+------------------------------------------------------------------------
+r15720 | hio | 2008-07-13 00:56:44 +0900 (Sun, 13 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, バージョン番号更新.
+
+------------------------------------------------------------------------
+r15715 | hio | 2008-07-13 00:38:40 +0900 (Sun, 13 Jul 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, ログ表示の微調整(リンクを時刻に埋め込み).
+DEBUGオプションいれたままだったのを解除.
+
+------------------------------------------------------------------------
+r15713 | hio | 2008-07-13 00:27:46 +0900 (Sun, 13 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, 携帯ブラウザの対応.
+
+------------------------------------------------------------------------
+r15706 | hio | 2008-07-12 21:35:54 +0900 (Sat, 12 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/mini.conf
+
+ドキュメント更新.
+
+------------------------------------------------------------------------
+r15705 | hio | 2008-07-12 21:33:43 +0900 (Sat, 12 Jul 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+Auto::FetchTitle, ID3tag対応追加, icecast対応が外れていたので修正.
+
+
+------------------------------------------------------------------------
+r15704 | hio | 2008-07-12 21:31:42 +0900 (Sat, 12 Jul 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Tools/ID3Tag.pm
+
+Tools::ID3Tag, MP3のID3タグの簡易抽出.
+
+------------------------------------------------------------------------
+r15703 | hio | 2008-07-12 21:29:11 +0900 (Sat, 12 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle(ExtractHeading), 見出し抽出追加.
+
+------------------------------------------------------------------------
+r15702 | hio | 2008-07-12 21:26:42 +0900 (Sat, 12 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+初期設定調整.
+
+------------------------------------------------------------------------
+r15585 | topia | 2008-07-10 02:01:45 +0900 (Thu, 10 Jul 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient/SSL.pm
+
+メッセージのチェックから!をはずしてみた。
+これで動くといいなあ。
+
+------------------------------------------------------------------------
+r15581 | hio | 2008-07-10 00:24:33 +0900 (Thu, 10 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, /style/style.css は認証通ってればみれるように.
+
+------------------------------------------------------------------------
+r15575 | hio | 2008-07-09 22:01:32 +0900 (Wed, 09 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, 認証情報のログが減っていたので補完.
+
+------------------------------------------------------------------------
+r15519 | hio | 2008-07-09 00:49:47 +0900 (Wed, 09 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, method="post" は対応できなかったりするぽい.
+
+------------------------------------------------------------------------
+r15518 | hio | 2008-07-09 00:48:44 +0900 (Wed, 09 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle, 見出し取得対応追加.
+
+------------------------------------------------------------------------
+r15324 | hio | 2008-07-07 00:58:55 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+sidにランダムいれわすれてた.
+
+------------------------------------------------------------------------
+r15318 | hio | 2008-07-07 00:34:51 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Channel/Mode/Oper/Grant.pm
+
+Channel/Mode/Oper/Grant, なんかうごかないことがあるぽい
+
+------------------------------------------------------------------------
+r15317 | hio | 2008-07-07 00:34:12 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+FetchTitle, タイトル取得の微調整.
+
+------------------------------------------------------------------------
+r15316 | hio | 2008-07-07 00:33:41 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+FetchTitle, タイトル取得箇所こまごま調整
+
+------------------------------------------------------------------------
+r15315 | hio | 2008-07-07 00:33:07 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+取得サイズ調整.
+
+------------------------------------------------------------------------
+r15314 | hio | 2008-07-07 00:32:46 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/2ch.pm
+
+FetchTitle, 2chをdatから読むプラグイン.
+
+------------------------------------------------------------------------
+r15313 | hio | 2008-07-07 00:31:48 +0900 (Mon, 07 Jul 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, shared時の名前を固定できるように.
+
+------------------------------------------------------------------------
+r14529 | topia | 2008-06-24 20:57:19 +0900 (Tue, 24 Jun 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+fix mask checking bug.
+* mask の実装ミスでデフォルト値が壊れていたのを修正。
+
+------------------------------------------------------------------------
+r14151 | topia | 2008-06-17 00:47:01 +0900 (Tue, 17 Jun 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Configuration/Block.pm
+   M /lang/perl/tiarra/trunk/main/Configuration/Parser.pm
+   A /lang/perl/tiarra/trunk/t/010_main_Configuration
+   A /lang/perl/tiarra/trunk/t/010_main_Configuration/001_basic_test.t
+   A /lang/perl/tiarra/trunk/t/010_main_Configuration/testdata1.conf
+
+support multiple nested block.
+* add tiny test for Configuration::Parser.
+* support multiple nested block.
+------------------------------------------------------------------------
+r14132 | topia | 2008-06-16 22:33:59 +0900 (Mon, 16 Jun 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/IRC/Message.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/IRC/Prefix.pm
+
+documentation fixes.
+* add POD for Tiarra::IRC::Prefix.
+* change AUTHOR section in Tiarra::IRC::Message.
+------------------------------------------------------------------------
+r14049 | hio | 2008-06-15 21:45:29 +0900 (Sun, 15 Jun 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, 接続ログに受理した認証の情報を表示するように.
+
+------------------------------------------------------------------------
+r13832 | topia | 2008-06-13 23:04:52 +0900 (Fri, 13 Jun 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+
+* change server_host/server_port disposal timing.
+------------------------------------------------------------------------
+r13831 | topia | 2008-06-13 23:01:33 +0900 (Fri, 13 Jun 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk
+   M /lang/perl/tiarra/trunk/doc/module-reload.txt
+   M /lang/perl/tiarra/trunk/main/ExternalSocket.pm
+   M /lang/perl/tiarra/trunk/main/Hook.pm
+   M /lang/perl/tiarra/trunk/main/Module.pm
+   M /lang/perl/tiarra/trunk/main/ModuleManager.pm
+   M /lang/perl/tiarra/trunk/main/ReloadTrigger.pm
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/WrapMainLoop.pm
+   M /lang/perl/tiarra/trunk/main/Timer.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+   M /lang/perl/tiarra/trunk/module/Skelton.pm
+
+* landing module-reload on trunk.
+------------------------------------------------------------------------
+r13830 | topia | 2008-06-13 22:45:55 +0900 (Fri, 13 Jun 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/BulletinBoard.pm
+
+* support value deletion.
+------------------------------------------------------------------------
+r13829 | topia | 2008-06-13 22:43:03 +0900 (Fri, 13 Jun 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/OptionalModules.pm
+
+* fix code style.
+------------------------------------------------------------------------
+r13084 | hio | 2008-06-02 22:56:48 +0900 (Mon, 02 Jun 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Multicast.pm
+
+network-separatorは後ろから取るように.
+
+------------------------------------------------------------------------
+r13025 | hio | 2008-06-01 23:50:38 +0900 (Sun, 01 Jun 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+System::WebClient, 未読管理の調整.
+
+------------------------------------------------------------------------
+r12996 | hio | 2008-06-01 21:16:13 +0900 (Sun, 01 Jun 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/mini.conf
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+System::WebClient, 発言時は最新のログに飛ぶように.
+
+------------------------------------------------------------------------
+r12926 | hio | 2008-05-31 23:42:57 +0900 (Sat, 31 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+perl -c の時はスレッド無効に.
+
+------------------------------------------------------------------------
+r12925 | hio | 2008-05-31 23:38:21 +0900 (Sat, 31 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+System::WebClient, CRYPTとSMD5を追加.
+
+------------------------------------------------------------------------
+r12856 | hio | 2008-05-30 23:37:23 +0900 (Fri, 30 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/module-reload.txt
+   A /lang/perl/tiarra/trunk/module/Tools/Reload.pm
+
+reload時に値を引き継ぐサンプルとして Tools::Reload をかいてみた.
+動作未確認.
+
+------------------------------------------------------------------------
+r12854 | hio | 2008-05-30 23:23:17 +0900 (Fri, 30 May 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/doc/auto-reply-comparison.txt
+
+Auto系の違いの説明を書いてみた.
+
+------------------------------------------------------------------------
+r12851 | hio | 2008-05-30 22:50:00 +0900 (Fri, 30 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/module/Auto/Reply.pm
+
+Auto::Reply, 間違えてたところもう一箇所修正.
+
+------------------------------------------------------------------------
+r12850 | hio | 2008-05-30 22:46:17 +0900 (Fri, 30 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/module/Auto/Reply.pm
+
+Auto::Reply 一部間違ってたのを修正と加筆.
+
+------------------------------------------------------------------------
+r12848 | hio | 2008-05-30 22:28:01 +0900 (Fri, 30 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/sample.conf
+
+なんかドキュメントにutf8修正の漏れ？
+
+------------------------------------------------------------------------
+r12847 | hio | 2008-05-30 22:15:27 +0900 (Fri, 30 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/module/Auto/Reply.pm
+
+Auto::Reply, 同じ応答マスクが複数個書かれていたときの処理を実装.
+あとドキュメント加筆.
+
+------------------------------------------------------------------------
+r12579 | hio | 2008-05-28 01:39:46 +0900 (Wed, 28 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+警告抑制.
+
+------------------------------------------------------------------------
+r12578 | hio | 2008-05-28 01:13:30 +0900 (Wed, 28 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+debug時に認証情報を標準出力に出すように.
+
+------------------------------------------------------------------------
+r12486 | topia | 2008-05-27 01:55:33 +0900 (Tue, 27 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+5.8 より前のことはわすれました。
+------------------------------------------------------------------------
+r12479 | drry | 2008-05-27 00:42:00 +0900 (Tue, 27 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+ * documentation.
+ * regexp.
+
+------------------------------------------------------------------------
+r12473 | hio | 2008-05-26 23:50:36 +0900 (Mon, 26 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Client.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   A /lang/perl/tiarra/trunk/module/Client/List.pm (from /lang/perl/tiarra/trunk/module/System/ClientList.pm:12470)
+   D /lang/perl/tiarra/trunk/module/System/ClientList.pm
+
+System::ClientList から Client::List にリネーム.
+
+------------------------------------------------------------------------
+r12470 | hio | 2008-05-26 23:44:00 +0900 (Mon, 26 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   A /lang/perl/tiarra/trunk/module/System/ClientList.pm
+
+クライアント一覧をリストアップする System::ClientList モジュール作成.
+
+------------------------------------------------------------------------
+r12340 | topia | 2008-05-25 19:40:16 +0900 (Sun, 25 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/macro.txt
+   A /lang/perl/tiarra/trunk/t
+   A /lang/perl/tiarra/trunk/t/010_module_Tools_HashTools_macro.t
+
+* add macro EBNF.
+* add macro expansion test.
+------------------------------------------------------------------------
+r12337 | topia | 2008-05-25 19:04:44 +0900 (Sun, 25 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+* tiarra: cleanup correctly.
+------------------------------------------------------------------------
+r12336 | topia | 2008-05-25 19:03:57 +0900 (Sun, 25 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/HACKING
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+   M /lang/perl/tiarra/trunk/main/TiarraDoc.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+   M /lang/perl/tiarra/trunk/module/Auto/MesMail.pm
+   M /lang/perl/tiarra/trunk/tiarra
+
+* revert recently wrong commit.
+------------------------------------------------------------------------
+r12335 | topia | 2008-05-25 19:02:56 +0900 (Sun, 25 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/HACKING
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+   M /lang/perl/tiarra/trunk/main/TiarraDoc.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+   M /lang/perl/tiarra/trunk/module/Auto/MesMail.pm
+   M /lang/perl/tiarra/trunk/tiarra
+
+* tiarra: cleanup correctly.
+------------------------------------------------------------------------
+r12325 | hio | 2008-05-25 16:43:30 +0900 (Sun, 25 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, 未読管理をひとまず実装.
+SoftBank,AUの端末認証を実装.
+別のTiarraさんからのログを見やすく.
+
+------------------------------------------------------------------------
+r12299 | hio | 2008-05-25 00:40:03 +0900 (Sun, 25 May 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/doc/module-reload.txt
+
+Tiarra モジュールのリロードに関する改善案メモ.
+
+------------------------------------------------------------------------
+r12298 | hio | 2008-05-25 00:38:04 +0900 (Sun, 25 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+
+ドキュメント系更新.
+
+------------------------------------------------------------------------
+r12297 | hio | 2008-05-25 00:37:28 +0900 (Sun, 25 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+FetchTitle, 設定変更時のリフレッシュ周りを調整.
+
+------------------------------------------------------------------------
+r12295 | hio | 2008-05-25 00:27:51 +0900 (Sun, 25 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/module/System/LivePatch.pm
+
+LivePatch, Configuration::Block#equals のバグ修正を反映.
+
+------------------------------------------------------------------------
+r12284 | hio | 2008-05-24 22:47:34 +0900 (Sat, 24 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+release.nikkei.co.jpを追加.
+
+------------------------------------------------------------------------
+r12214 | topia | 2008-05-22 20:34:11 +0900 (Thu, 22 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Log/Channel.pm
+
+* use Tools::HashTools (instead of Auto::AliasDB).
+* kill once warnings for S_* and C_* aliases.
+
+------------------------------------------------------------------------
+r12198 | topia | 2008-05-22 15:38:54 +0900 (Thu, 22 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Log/Channel.pm
+
+* Log::Channel: require Auto::AliasDB.
+------------------------------------------------------------------------
+r12141 | hio | 2008-05-21 22:28:32 +0900 (Wed, 21 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+!なチャンネルの調整.
+
+------------------------------------------------------------------------
+r12095 | hio | 2008-05-21 09:32:31 +0900 (Wed, 21 May 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/doc/macro.txt
+
+マクロ展開関係のメモ.
+
+------------------------------------------------------------------------
+r12073 | hio | 2008-05-20 23:12:59 +0900 (Tue, 20 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+警告がでてたのを修正.
+
+------------------------------------------------------------------------
+r12072 | hio | 2008-05-20 22:58:17 +0900 (Tue, 20 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+コメント加筆.
+
+------------------------------------------------------------------------
+r12068 | hio | 2008-05-20 22:13:47 +0900 (Tue, 20 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Log.html
+   M /lang/perl/tiarra/trunk/module/Log/Channel.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+
+Log::Channel, 自動でチャンネル別にログを保存できるように.
+
+------------------------------------------------------------------------
+r11872 | topia | 2008-05-18 14:25:48 +0900 (Sun, 18 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/IRC/Message.pm
+
+* Tiarra::IRC::Message: parse 時の max param exceeded 警告がちゃんと出るようにした。
+
+------------------------------------------------------------------------
+r11869 | topia | 2008-05-18 14:01:08 +0900 (Sun, 18 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/CTCP/DCC/RewriteAddress.pm
+
+* warn 関係を printmsg ではなく runloop->notify_warn に流すように変更。
+
+------------------------------------------------------------------------
+r11868 | topia | 2008-05-18 14:00:32 +0900 (Sun, 18 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Configuration/Block.pm
+
+* Configuration::Block->equals:
+  設定にブロックを使ったモジュール同士の評価に失敗することがあったのを修正
+
+------------------------------------------------------------------------
+r11732 | hio | 2008-05-17 14:08:14 +0900 (Sat, 17 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+fix on extracting urls.
+
+------------------------------------------------------------------------
+r11731 | hio | 2008-05-17 14:07:28 +0900 (Sat, 17 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+add gourmet.oricon.co.jp.
+
+------------------------------------------------------------------------
+r11595 | topia | 2008-05-14 18:53:05 +0900 (Wed, 14 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+* add raw_channel alias key.
+
+------------------------------------------------------------------------
+r11540 | topia | 2008-05-14 00:02:23 +0900 (Wed, 14 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+
+ * set server_host on connection accepted.
+
+------------------------------------------------------------------------
+r11480 | topia | 2008-05-13 02:42:42 +0900 (Tue, 13 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+
+* サーバ接続時には progress がないとわかりにくいので表示するように。
+
+------------------------------------------------------------------------
+r11479 | topia | 2008-05-13 02:41:48 +0900 (Tue, 13 May 2008) | 5 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* try_count がちゃんと試行回数を返すようにした。
+  (前までは再試行の回数を返していた。)
+* progress コールバックの追加。
+* メソッド名を _notify_skip, _notify_progress にした。
+
+------------------------------------------------------------------------
+r11477 | topia | 2008-05-13 02:29:51 +0900 (Tue, 13 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/LinedINETSocket.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Buffered.pm
+
+* パラメータの順番が間違ってたので修正。
+  (ただし外部仕様には影響がなかった。)
+------------------------------------------------------------------------
+r11475 | topia | 2008-05-13 01:39:36 +0900 (Tue, 13 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/main/Configuration.pm
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+
+* IrcIO::Server: support multiple host/port configuration.
+------------------------------------------------------------------------
+r11470 | topia | 2008-05-13 00:06:02 +0900 (Tue, 13 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/NotifyIcon/Win32.pm
+
+* tooltip の変更に Win32::GUI の正式 API を使うように書き換えた。
+
+------------------------------------------------------------------------
+r11418 | topia | 2008-05-12 02:31:59 +0900 (Mon, 12 May 2008) | 6 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+
+* Tiarra::Socket::Connector をまじめに使うようにした。
+* 内部的に複数ホスト/複数ポートに接続を試行できるようになりましたが、
+  設定をどう記述させようか悩んでいるので設定の方はまだです。
+* 多分大丈夫だと思いますが、結構コードを書き換えたので十分に
+  テストしてから入れ換えてください。
+
+------------------------------------------------------------------------
+r11417 | topia | 2008-05-12 02:16:49 +0900 (Mon, 12 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* メッセージをすこし変更。
+
+------------------------------------------------------------------------
+r11416 | topia | 2008-05-12 01:59:31 +0900 (Mon, 12 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* 複数ポートを指定できるように。
+* _connect_stage を _connect_after_resolve にリネーム。
+* ソケットエラー処理を一部変更。
+
+------------------------------------------------------------------------
+r11415 | topia | 2008-05-12 01:38:06 +0900 (Mon, 12 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* name resolution error に host をつけるようにした。
+* $sock not defined を warn & try next にした。
+* unix domain socket で before_connect が呼ばれるようにした。
+
+------------------------------------------------------------------------
+r11414 | topia | 2008-05-12 01:36:31 +0900 (Mon, 12 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+
+* 全然使ってないインスタンス変数を捨てる。
+
+------------------------------------------------------------------------
+r11408 | topia | 2008-05-11 23:01:10 +0900 (Sun, 11 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+* --debug --show-env の時にはモジュールロードの
+  エラーメッセージが出るように。
+
+------------------------------------------------------------------------
+r11407 | topia | 2008-05-11 23:00:20 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+* Thread::Queue のロード順を最後にした。気分の問題。
+
+------------------------------------------------------------------------
+r11406 | topia | 2008-05-11 22:59:27 +0900 (Sun, 11 May 2008) | 8 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* 動作フローの見直し。主に error から warn and try next への変更。
+* hooks->{before_connect} を追加(したけど未テスト)。
+  * 特定のaddr/port/type をみて skip したり、書き換えたりできるはず。
+* bind_addr をコネクション毎にオーバーライドできるように(同じく未テスト)。
+* callback の optional genre として skip を追加した。
+* ドキュメントをちょっと書き直した。
+  * 重要なのは callback の 'error' genre は接続の試行が終わるというところ。
+
+------------------------------------------------------------------------
+r11394 | topia | 2008-05-11 15:57:19 +0900 (Sun, 11 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/doc/module/Client.html
+   M /lang/perl/tiarra/trunk/doc/module/Debug.html
+   M /lang/perl/tiarra/trunk/doc/module/Log.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module/UNCLASSIFIED.html
+   M /lang/perl/tiarra/trunk/doc/module/User.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+
+* regen documentation.* delete unnecessary property.
+------------------------------------------------------------------------
+r11393 | topia | 2008-05-11 15:56:12 +0900 (Sun, 11 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/contents.html
+   M /lang/perl/tiarra/trunk/doc-src/module-toc.html
+
+* XML 宣言の文字コードの存在を忘れてた。これも UTF-8 に。
+------------------------------------------------------------------------
+r11392 | topia | 2008-05-11 15:46:50 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/OptionalModules.pm
+
+* add note of required modules.
+
+------------------------------------------------------------------------
+r11381 | topia | 2008-05-11 05:54:37 +0900 (Sun, 11 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/bundle/Unicode/Japanese.pm
+
+* upgrade Unicode::Japanese to 0.45.
+------------------------------------------------------------------------
+r11372 | hio | 2008-05-11 01:10:37 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+
+Auto::FetchTitle::Plugin::Mixi, ExtractHeading の tiarra-doc をマージ.
+
+------------------------------------------------------------------------
+r11371 | hio | 2008-05-11 00:58:25 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+
+Auto::FetchTitle::Plugin::ExtractHeading, tiarra.conf でも抽出パターンを記述できるように.
+
+------------------------------------------------------------------------
+r11370 | hio | 2008-05-11 00:57:15 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+
+Auto::FetchTitle::Plugin::Mixi, tiarra-doc 追加.
+
+------------------------------------------------------------------------
+r11369 | hio | 2008-05-11 00:56:26 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin.pm
+
+Auto::FetchTitle::Plugin, ユーティリティメソッドを追加.
+
+------------------------------------------------------------------------
+r11368 | hio | 2008-05-11 00:55:38 +0900 (Sun, 11 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+ワイルドカードクッキーの対応.
+
+------------------------------------------------------------------------
+r11365 | topia | 2008-05-10 23:58:28 +0900 (Sat, 10 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk
+   M /lang/perl/tiarra/trunk/AUTHORS
+   M /lang/perl/tiarra/trunk/ChangeLog
+   M /lang/perl/tiarra/trunk/HACKING
+   M /lang/perl/tiarra/trunk/INSTALL
+   M /lang/perl/tiarra/trunk/LICENSE
+   M /lang/perl/tiarra/trunk/NEWS
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/default.css
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/doc/module/Client.html
+   M /lang/perl/tiarra/trunk/doc/module/Debug.html
+   M /lang/perl/tiarra/trunk/doc/module/Log.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module/UNCLASSIFIED.html
+   M /lang/perl/tiarra/trunk/doc/module/User.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/doc-src/README
+   M /lang/perl/tiarra/trunk/doc-src/all.conf.in
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/doc-src/contents.html
+   M /lang/perl/tiarra/trunk/doc-src/module-group.tdoc
+   M /lang/perl/tiarra/trunk/doc-src/module-toc.html
+   M /lang/perl/tiarra/trunk/doc-src/sample.conf.in
+   M /lang/perl/tiarra/trunk/main/BulletinBoard.pm
+   M /lang/perl/tiarra/trunk/main/CTCP.pm
+   M /lang/perl/tiarra/trunk/main/ChannelInfo.pm
+   M /lang/perl/tiarra/trunk/main/Configuration/Block.pm
+   M /lang/perl/tiarra/trunk/main/Configuration/LexicalAnalyzer.pm
+   M /lang/perl/tiarra/trunk/main/Configuration/Parser.pm
+   M /lang/perl/tiarra/trunk/main/Configuration/Preprocessor.pm
+   M /lang/perl/tiarra/trunk/main/Configuration.pm
+   M /lang/perl/tiarra/trunk/main/ControlPort.pm
+   M /lang/perl/tiarra/trunk/main/Crypt.pm
+   M /lang/perl/tiarra/trunk/main/Exception.pm
+   M /lang/perl/tiarra/trunk/main/ExternalSocket.pm
+   M /lang/perl/tiarra/trunk/main/FunctionalVariable.pm
+   M /lang/perl/tiarra/trunk/main/Hook.pm
+   M /lang/perl/tiarra/trunk/main/IRCMessage.pm
+   M /lang/perl/tiarra/trunk/main/InstantCapsule.pm
+   M /lang/perl/tiarra/trunk/main/IrcIO/Client.pm
+   M /lang/perl/tiarra/trunk/main/IrcIO/Server.pm
+   M /lang/perl/tiarra/trunk/main/IrcIO.pm
+   M /lang/perl/tiarra/trunk/main/Iterator/ArrayIterator.pm
+   M /lang/perl/tiarra/trunk/main/Iterator/BackwardIterator.pm
+   M /lang/perl/tiarra/trunk/main/Iterator/BidirectionalIterator.pm
+   M /lang/perl/tiarra/trunk/main/Iterator/ForwardIterator.pm
+   M /lang/perl/tiarra/trunk/main/Iterator/RandomAccessIterator.pm
+   M /lang/perl/tiarra/trunk/main/Iterator/RoundIterator.pm
+   M /lang/perl/tiarra/trunk/main/Iterator.pm
+   M /lang/perl/tiarra/trunk/main/L10N.pm
+   M /lang/perl/tiarra/trunk/main/LinedINETSocket.pm
+   M /lang/perl/tiarra/trunk/main/LocalChannelManager.pm
+   M /lang/perl/tiarra/trunk/main/Mask.pm
+   M /lang/perl/tiarra/trunk/main/Module/Use.pm
+   M /lang/perl/tiarra/trunk/main/Module.pm
+   M /lang/perl/tiarra/trunk/main/ModuleManager.pm
+   M /lang/perl/tiarra/trunk/main/Multicast.pm
+   M /lang/perl/tiarra/trunk/main/NumericReply.pm
+   M /lang/perl/tiarra/trunk/main/PersonInChannel.pm
+   M /lang/perl/tiarra/trunk/main/PersonalInfo.pm
+   M /lang/perl/tiarra/trunk/main/ReloadTrigger.pm
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+   M /lang/perl/tiarra/trunk/main/Template.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Encoding/UniJP.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/IRC/Message.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Buffered.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Lined.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket.pm
+   M /lang/perl/tiarra/trunk/main/Tiarra/Utils.pm
+   M /lang/perl/tiarra/trunk/main/TiarraDoc.pm
+   M /lang/perl/tiarra/trunk/main/Timer.pm
+   M /lang/perl/tiarra/trunk/makedoc
+   M /lang/perl/tiarra/trunk/module/Auto/Alias.pm
+   M /lang/perl/tiarra/trunk/module/Auto/AliasDB/CallbackUtils.pm
+   M /lang/perl/tiarra/trunk/module/Auto/AliasDB.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Answer.pm
+   M /lang/perl/tiarra/trunk/module/Auto/CacheManager.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Calc.pm
+   M /lang/perl/tiarra/trunk/module/Auto/ChannelWithoutOper.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Joined.pm
+   M /lang/perl/tiarra/trunk/module/Auto/MesMail.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Oper.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Random.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Reply.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Response.pm
+   M /lang/perl/tiarra/trunk/module/Auto/Utils.pm
+   M /lang/perl/tiarra/trunk/module/CTCP/ClientInfo.pm
+   M /lang/perl/tiarra/trunk/module/CTCP/Ping.pm
+   M /lang/perl/tiarra/trunk/module/CTCP/Time.pm
+   M /lang/perl/tiarra/trunk/module/CTCP/UserInfo.pm
+   M /lang/perl/tiarra/trunk/module/CTCP/Version.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Freeze.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Connect.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Invite.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Join/Kicked.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Mode/Get.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Mode/Oper/Grant.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Mode/Set.pm
+   M /lang/perl/tiarra/trunk/module/Channel/Rejoin.pm
+   M /lang/perl/tiarra/trunk/module/Client/Cache.pm
+   M /lang/perl/tiarra/trunk/module/Client/Conservative.pm
+   M /lang/perl/tiarra/trunk/module/Client/Cotton.pm
+   M /lang/perl/tiarra/trunk/module/Client/Eval.pm
+   M /lang/perl/tiarra/trunk/module/Client/GetVersion.pm
+   M /lang/perl/tiarra/trunk/module/Client/PatchworkMessage.pm
+   M /lang/perl/tiarra/trunk/module/Client/ProtectMyself.pm
+   M /lang/perl/tiarra/trunk/module/Client/Rehash.pm
+   M /lang/perl/tiarra/trunk/module/Client/ShowNick.pm
+   M /lang/perl/tiarra/trunk/module/Debug/AliasTest.pm
+   M /lang/perl/tiarra/trunk/module/Debug/Core.pm
+   M /lang/perl/tiarra/trunk/module/Debug/RawLog.pm
+   M /lang/perl/tiarra/trunk/module/Log/Channel.pm
+   M /lang/perl/tiarra/trunk/module/Log/ChannelList.pm
+   M /lang/perl/tiarra/trunk/module/Log/Logger.pm
+   M /lang/perl/tiarra/trunk/module/Log/Raw.pm
+   M /lang/perl/tiarra/trunk/module/Log/Recent.pm
+   M /lang/perl/tiarra/trunk/module/Log/Writer/File.pm
+   M /lang/perl/tiarra/trunk/module/Log/Writer.pm
+   M /lang/perl/tiarra/trunk/module/Skelton.pm
+   M /lang/perl/tiarra/trunk/module/System/Error.pm
+   M /lang/perl/tiarra/trunk/module/System/LivePatch.pm
+   M /lang/perl/tiarra/trunk/module/System/Macro.pm
+   M /lang/perl/tiarra/trunk/module/System/NotifyIcon/Win32.pm
+   M /lang/perl/tiarra/trunk/module/System/Pong.pm
+   M /lang/perl/tiarra/trunk/module/System/PrivTranslator.pm
+   M /lang/perl/tiarra/trunk/module/System/Raw.pm
+   M /lang/perl/tiarra/trunk/module/System/Reload.pm
+   M /lang/perl/tiarra/trunk/module/System/RemoteControl.pm
+   M /lang/perl/tiarra/trunk/module/System/SendMessage.pm
+   M /lang/perl/tiarra/trunk/module/System/Shutdown.pm
+   M /lang/perl/tiarra/trunk/module/Tools/DateConvert.pm
+   M /lang/perl/tiarra/trunk/module/Tools/FileCache/EachFile.pm
+   M /lang/perl/tiarra/trunk/module/Tools/FileCache.pm
+   M /lang/perl/tiarra/trunk/module/Tools/GroupDB.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+   M /lang/perl/tiarra/trunk/module/Tools/Hash.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HashDB.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HashTools.pm
+   M /lang/perl/tiarra/trunk/module/Tools/LinedDB.pm
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend/EachServer.pm
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend.pm
+   M /lang/perl/tiarra/trunk/module/User/Away/Client.pm
+   M /lang/perl/tiarra/trunk/module/User/Away/Nick.pm
+   M /lang/perl/tiarra/trunk/module/User/Filter.pm
+   M /lang/perl/tiarra/trunk/module/User/Ignore.pm
+   M /lang/perl/tiarra/trunk/module/User/Kick.pm
+   M /lang/perl/tiarra/trunk/module/User/Nick/Detached.pm
+   M /lang/perl/tiarra/trunk/module/User/ServerOper.pm
+   M /lang/perl/tiarra/trunk/module/User/Vanish.pm
+   M /lang/perl/tiarra/trunk/sample.conf
+   M /lang/perl/tiarra/trunk/tiarra
+   M /lang/perl/tiarra/trunk/tiarra-conf.el
+
+* merge UTF-8 branch.
+------------------------------------------------------------------------
+r11355 | topia | 2008-05-10 22:18:03 +0900 (Sat, 10 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+* regen documentation.
+------------------------------------------------------------------------
+r11354 | topia | 2008-05-10 22:13:40 +0900 (Sat, 10 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+* support password.
+* support mask.
+* explain default value of format.
+
+------------------------------------------------------------------------
+r11353 | topia | 2008-05-10 21:01:26 +0900 (Sat, 10 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+* fix keyword splitting bug.
+* small style change.
+
+------------------------------------------------------------------------
+r11347 | topia | 2008-05-10 19:15:42 +0900 (Sat, 10 May 2008) | 5 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+* support im.kayac.com secret mode.
+* use Tools::HTTPClient (require r11345 or later).
+* add regex-keyword configuration.
+* add format configuration.
+
+------------------------------------------------------------------------
+r11346 | topia | 2008-05-10 17:46:51 +0900 (Sat, 10 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+HTTP::Request support:
+ * set correct type scalar.
+ * style fix.
+
+------------------------------------------------------------------------
+r11345 | topia | 2008-05-10 17:20:26 +0900 (Sat, 10 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+* support request information fetching from HTTP::Request.
+  Tools::HTTPClient->new(Request => $http_request_object.
+
+------------------------------------------------------------------------
+r11344 | topia | 2008-05-10 16:36:53 +0900 (Sat, 10 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+* set properties.
+------------------------------------------------------------------------
+r11341 | ha1t | 2008-05-10 15:06:08 +0900 (Sat, 10 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+てきとーなpod追加
+------------------------------------------------------------------------
+r11340 | ha1t | 2008-05-10 14:52:44 +0900 (Sat, 10 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+チャンネル名が出るようにした
+------------------------------------------------------------------------
+r11339 | ha1t | 2008-05-10 14:12:47 +0900 (Sat, 10 May 2008) | 1 line
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Auto/Im.pm
+
+ぺるる使いが綺麗にしてくれる事を信じてコミット
+------------------------------------------------------------------------
+r11256 | topia | 2008-05-08 00:50:47 +0900 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Log/Writer.pm
+
+* trivial message fix.
+
+------------------------------------------------------------------------
+r11255 | topia | 2008-05-08 00:47:49 +0900 (Thu, 08 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/CTCP.pm
+   M /lang/perl/tiarra/trunk/main/Crypt.pm
+   M /lang/perl/tiarra/trunk/main/ExternalSocket.pm
+   M /lang/perl/tiarra/trunk/main/LinedINETSocket.pm
+
+* disable SelfLoader to work under taint check.
+------------------------------------------------------------------------
+r11254 | topia | 2008-05-08 00:25:16 +0900 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Utils/DefineHelper.pm
+
+* kill redefine and prototype warning, instead of undef funcname GLOB.
+
+------------------------------------------------------------------------
+r11253 | topia | 2008-05-08 00:24:16 +0900 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/ExternalSocket.pm
+
+* fix bug.
+
+------------------------------------------------------------------------
+r11251 | topia | 2008-05-07 23:58:02 +0900 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+* drop IO::Socket::INET6 from bundle list.
+
+------------------------------------------------------------------------
+r11250 | topia | 2008-05-07 23:55:56 +0900 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+* mention about --show-env.
+
+------------------------------------------------------------------------
+r11203 | topia | 2008-05-06 17:34:36 +0900 (Tue, 06 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* fix default option handling.
+* add documentation about unix domain socket.
+
+------------------------------------------------------------------------
+r11202 | topia | 2008-05-06 17:13:24 +0900 (Tue, 06 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+* support threads <= 1.33.
+* trivial change of resolved data handling.
+
+------------------------------------------------------------------------
+r11201 | topia | 2008-05-06 17:11:07 +0900 (Tue, 06 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* fix bug on unix connector.
+
+------------------------------------------------------------------------
+r11200 | topia | 2008-05-06 16:53:23 +0900 (Tue, 06 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/ControlPort.pm
+
+* set sticky bit to /tmp/tiarra-control.
+* try unlink ControlPort if cannot connect.
+
+------------------------------------------------------------------------
+r11199 | topia | 2008-05-06 16:35:55 +0900 (Tue, 06 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/OptionalModules.pm
+
+* add Socket6 module to ipv6 support, explicitly.
+
+------------------------------------------------------------------------
+r11198 | topia | 2008-05-06 16:31:39 +0900 (Tue, 06 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Client.pm
+
+* trivial message fix.
+
+------------------------------------------------------------------------
+r11197 | topia | 2008-05-06 16:26:45 +0900 (Tue, 06 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Client.pm
+
+* more verbose log message on client acception sequence.
+
+------------------------------------------------------------------------
+r11164 | topia | 2008-05-05 17:59:02 +0900 (Mon, 05 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/CTCP/DCC/RewriteAddress.pm
+
+* rename closure to callback.
+* fix documentation.
+
+------------------------------------------------------------------------
+r11131 | topia | 2008-05-05 02:22:08 +0900 (Mon, 05 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+* regenerate documentation.
+------------------------------------------------------------------------
+r11130 | topia | 2008-05-05 02:20:34 +0900 (Mon, 05 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/CTCP/DCC/RewriteAddress.pm
+
+* more refactored.
+* add documentation.
+
+------------------------------------------------------------------------
+r11129 | topia | 2008-05-05 01:58:04 +0900 (Mon, 05 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+* more efficient error handling.
+* re-run resolver thread on dead.
+
+------------------------------------------------------------------------
+r11126 | topia | 2008-05-05 00:00:33 +0900 (Mon, 05 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/DateConvert.pm
+
+* cosmetic fixes.
+
+------------------------------------------------------------------------
+r11125 | topia | 2008-05-04 23:56:12 +0900 (Sun, 04 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend/EachServer.pm
+
+* use Tools::DateConvert::expand to set locale.
+
+------------------------------------------------------------------------
+r11123 | topia | 2008-05-04 23:54:30 +0900 (Sun, 04 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/DateConvert.pm
+
+* fix %O bug.
+* add new interface: expand.
+
+------------------------------------------------------------------------
+r11121 | topia | 2008-05-04 23:41:38 +0900 (Sun, 04 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/CTCP/DCC/RewriteAddress.pm
+
+* refactored.
+
+------------------------------------------------------------------------
+r11117 | topia | 2008-05-04 23:23:06 +0900 (Sun, 04 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+* support threading on QUERY_NAMEINFO.
+* disable threading on QUERY_NAMEINFO.
+* make error handling more efficient.
+
+------------------------------------------------------------------------
+r11101 | topia | 2008-05-04 20:05:35 +0900 (Sun, 04 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+
+* use lazy loading for ControlPort.
+------------------------------------------------------------------------
+r11099 | topia | 2008-05-04 20:04:39 +0900 (Sun, 04 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/ControlPort.pm
+
+* use Tiarra::TerminateManager.
+------------------------------------------------------------------------
+r11049 | topia | 2008-05-04 03:35:00 +0900 (Sun, 04 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+* regenerate documentation.
+------------------------------------------------------------------------
+r11048 | topia | 2008-05-04 03:20:06 +0900 (Sun, 04 May 2008) | 1 line
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/CTCP/DCC
+   A /lang/perl/tiarra/trunk/module/CTCP/DCC/RewriteAddress.pm
+
+* add cTCP::DCC::RewriteAddress.
+------------------------------------------------------------------------
+r11043 | topia | 2008-05-04 02:02:38 +0900 (Sun, 04 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+* drop cvsversion scanner.
+* minor behavior fixes.
+------------------------------------------------------------------------
+r11017 | hio | 2008-05-03 15:45:50 +0900 (Sat, 03 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+WebClient, 入退室やトピックなんかも実装.
+
+------------------------------------------------------------------------
+r11016 | hio | 2008-05-03 15:43:45 +0900 (Sat, 03 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPParser.pm
+
+HTTP ステータスをすこし追加.
+
+------------------------------------------------------------------------
+r11015 | hio | 2008-05-03 15:42:38 +0900 (Sat, 03 May 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+チャンネル別に明示的に使わないが出来なかったのを修正.
+LANアドレス判定を毎回やってたのを修正.
+
+------------------------------------------------------------------------
+r11014 | hio | 2008-05-03 15:40:52 +0900 (Sat, 03 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+HTTPClient, 正常終了判定の修正. shutdown処理をコメントアウト.
+
+------------------------------------------------------------------------
+r10996 | topia | 2008-05-03 05:47:32 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+
+* regenerate documentation.
+------------------------------------------------------------------------
+r10983 | topia | 2008-05-03 01:53:53 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Connect.pm
+
+* partially rewrite select result processing code in socket connector.
+------------------------------------------------------------------------
+r10982 | topia | 2008-05-03 01:49:32 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket.pm
+   M /lang/perl/tiarra/trunk/main/Timer.pm
+
+* use lazy loading for RunLoop.
+------------------------------------------------------------------------
+r10977 | topia | 2008-05-03 01:14:16 +0900 (Sat, 03 May 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+* make timer mainloop interval to a second.
+* add hook mainloop (to quick response).
+* some informational comment added.
+* fix some behavior on error.
+------------------------------------------------------------------------
+r10975 | topia | 2008-05-03 01:09:53 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/WrapMainLoop.pm
+
+* fix minor bug.
+------------------------------------------------------------------------
+r10974 | topia | 2008-05-03 01:08:19 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/ModuleManager.pm
+
+* use eval for ->destruct.
+------------------------------------------------------------------------
+r10973 | topia | 2008-05-03 01:06:53 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Calc.pm
+
+* fix documentation bug.
+------------------------------------------------------------------------
+r10972 | topia | 2008-05-03 00:49:49 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/DateConvert.pm
+
+* Tools::DateConvert::replace: fix minor bug.
+------------------------------------------------------------------------
+r10971 | topia | 2008-05-03 00:43:52 +0900 (Sat, 03 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend/EachServer.pm
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend.pm
+
+* get rid of dependency to getpwuid (support win32).
+* use pureperl dateconvert (fix locale related issue).
+------------------------------------------------------------------------
+r10970 | topia | 2008-05-03 00:41:37 +0900 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/DateConvert.pm
+
+* Tools::DateConvert::replace: add pureperl argument.
+------------------------------------------------------------------------
+r10954 | hio | 2008-05-02 22:24:15 +0900 (Fri, 02 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient/SSL.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+lang/perl/tiarra: FetchTitle他, IPアドレスチェックがちゃんとできてなかったのを修正.
+
+------------------------------------------------------------------------
+r10908 | hio | 2008-05-02 01:57:24 +0900 (Fri, 02 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: plugin単位での設定に対応. Privateアドレスのアクセス拒否を実装.
+
+------------------------------------------------------------------------
+r10907 | hio | 2008-05-02 01:52:07 +0900 (Fri, 02 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+lang/perl/tiarra: HTTPClient, Tiarra::Resolverを使ってDNS解決をおこなうように.
+
+------------------------------------------------------------------------
+r10893 | hio | 2008-05-01 21:42:29 +0900 (Thu, 01 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: FetchTitle, DEBUGモードのままだった＞＜。
+
+------------------------------------------------------------------------
+r10891 | hio | 2008-05-01 21:18:10 +0900 (Thu, 01 May 2008) | 4 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/ExtractHeading.pm
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/Mixi.pm
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin/TouhouReplay.pm
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle/Plugin.pm
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: FetchTitle, カスタマイズ部分を独立モジュールでかけるように.
+POSTでの再問い合わせに対応.
+Cookieの対応.
+
+------------------------------------------------------------------------
+r10890 | hio | 2008-05-01 20:13:21 +0900 (Thu, 01 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPParser.pm
+
+lang/perl/tiarra: HTTPParser, 複数回でてきたヘッダもひとまず保持できるように.
+
+------------------------------------------------------------------------
+r10889 | hio | 2008-05-01 20:07:47 +0900 (Thu, 01 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+lang/perl/tiarra: HTTPClient, リクエスト送信後, shutdownを発行するように修正.
+
+------------------------------------------------------------------------
+r10848 | topia | 2008-05-01 01:14:33 +0900 (Thu, 01 May 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+
+* support new irc message remarks: do-not-broadcast-to-clients and do-not-send-to-server.
+------------------------------------------------------------------------
+r10846 | topia | 2008-05-01 01:06:02 +0900 (Thu, 01 May 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+* add nameinfo query type.
+* add informational comments.
+------------------------------------------------------------------------
+r10231 | topia | 2008-04-24 02:38:16 +0900 (Thu, 24 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Lined.pm
+
+* Tiarra::Socket::Lined を EOL を無視して使えるようにした。
+  send_reserve を使いたい時は eol を一時的に書き換えてください。
+------------------------------------------------------------------------
+r9987 | hio | 2008-04-20 16:52:19 +0900 (Sun, 20 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: 見出し抽出の追加, 200以外でも抽出を行えるように.
+
+------------------------------------------------------------------------
+r9947 | drry | 2008-04-20 08:43:24 +0900 (Sun, 20 Apr 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm:
+ * ワイの環境ではこの部分で止まってしまったとばい。ワークアラウンドや。
+
+------------------------------------------------------------------------
+r9724 | mumumu | 2008-04-18 23:03:21 +0900 (Fri, 18 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/IrcIO/Client.pm
+
+- fixed bug server numeric reply included user fullname.
+
+------------------------------------------------------------------------
+r9215 | hio | 2008-04-09 23:37:50 +0900 (Wed, 09 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPParser.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPServer/Client.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPServer.pm
+
+lang/perl/tiarra: HTTPオブジェクトにRemoteAddrを持たせるように. X-Forwarded-For の展開をサポート.
+
+------------------------------------------------------------------------
+r9107 | hio | 2008-04-08 02:25:45 +0900 (Tue, 08 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+lang/perl/tiarra: use しないで使ってるモジュールがあった.
+------------------------------------------------------------------------
+r9106 | hio | 2008-04-08 02:07:34 +0900 (Tue, 08 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPServer/Client.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPServer.pm
+
+lang/perl/tiarra: デバッグメッセージの抑制
+------------------------------------------------------------------------
+r9104 | hio | 2008-04-08 01:22:54 +0900 (Tue, 08 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Resolver.pm
+
+lang/perl/tiarra: Win2kでlocalhostを解決できない現象の回避
+------------------------------------------------------------------------
+r9103 | hio | 2008-04-08 01:12:43 +0900 (Tue, 08 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/RunLoop.pm
+
+lang/perl/tiarra: Win32/select()+Ctrl-C挙動のメモ追加
+------------------------------------------------------------------------
+r9023 | hio | 2008-04-06 23:36:56 +0900 (Sun, 06 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+lang/perl/tiarra: owner-mode/shared-modeの設定を追加
+------------------------------------------------------------------------
+r9021 | hio | 2008-04-06 22:17:41 +0900 (Sun, 06 Apr 2008) | 3 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+lang/perl/tiarra: System::WebClient, topicとメンバの表示を追加,
+ログのページ分けを実装.
+
+------------------------------------------------------------------------
+r9012 | hio | 2008-04-06 19:55:41 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: System::WebClient, config-reload のチェックを追加.
+
+------------------------------------------------------------------------
+r9011 | hio | 2008-04-06 19:45:27 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+lang/perl/tiarra: System::WebClient, ドキュメント加筆.
+
+------------------------------------------------------------------------
+r9010 | hio | 2008-04-06 19:42:15 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Mask.pm
+
+lang/perl/tiarra: Mask#match_chan, コメント加筆.
+
+------------------------------------------------------------------------
+r9005 | hio | 2008-04-06 17:12:28 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/default.css
+
+lang/perl/tiarra: モジュール一覧HTMLのスタイル調整.
+
+------------------------------------------------------------------------
+r8998 | hio | 2008-04-06 16:32:26 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+lang/perl/tiarra: System::WebClient, ドキュメント加筆.
+
+------------------------------------------------------------------------
+r8995 | hio | 2008-04-06 16:27:40 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/doc/module/Log.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module/User.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/makedoc
+
+lang/perl/tiarra: モジュール一覧のHTMLがescapeされていなかったので修正.
+
+------------------------------------------------------------------------
+r8988 | hio | 2008-04-06 15:26:43 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/System/WebClient.pm
+
+lang/perl/tiarra: System::WebClient, HTTPでのIRCインターフェースを追加.
+
+------------------------------------------------------------------------
+r8985 | hio | 2008-04-06 15:17:58 +0900 (Sun, 06 Apr 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+   A /lang/perl/tiarra/trunk/module/Tools/HTTPParser.pm
+   A /lang/perl/tiarra/trunk/module/Tools/HTTPServer
+   A /lang/perl/tiarra/trunk/module/Tools/HTTPServer/Client.pm
+   A /lang/perl/tiarra/trunk/module/Tools/HTTPServer.pm
+
+lang/perl/tiarra: HTTP通信解釈モジュール Tools::HTTPParser を追加.
+Tools::HTTPServer追加.
+Tools::HTTPClientをTools::HTTPParserを使うように修正.
+
+------------------------------------------------------------------------
+r8984 | hio | 2008-04-06 15:07:22 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient/SSL.pm
+
+lang/perl/tiarra: Tools::HTTPClient::SSL, こまごま調整.
+
+------------------------------------------------------------------------
+r8983 | hio | 2008-04-06 15:01:08 +0900 (Sun, 06 Apr 2008) | 7 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: cookie指定の対応.
+ドキュメント取得パラメータの調整.
+複数のフィルタを呼べるように修正.
+不完全なLocation(相対指定)に対応.
+警告抑制, デバッグメッセージ追加.
+
+
+------------------------------------------------------------------------
+r8981 | hio | 2008-04-06 14:53:10 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/LivePatch.pm
+
+lang/perl/tiarra: 条件判定が逆だったo__)o
+
+------------------------------------------------------------------------
+r8978 | hio | 2008-04-06 14:06:08 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Debug.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   A /lang/perl/tiarra/trunk/module/Debug/Core.pm
+
+lang/perl/tiarra: Debug::Core, Tiarra の内部構造追跡モジュールを追加.
+
+------------------------------------------------------------------------
+r8977 | hio | 2008-04-06 14:00:17 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Log/Logger.pm
+
+lang/perl/tiarra: TALK時の整形をLog::Channelから拝借.
+
+------------------------------------------------------------------------
+r8976 | hio | 2008-04-06 13:48:46 +0900 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/module/System/LivePatch.pm
+
+lang/perl/tiarra: System::LivePatch, /livepatch apply されるまで適用は行わないように変更.
+
+------------------------------------------------------------------------
+r8939 | topia | 2008-04-05 23:17:51 +0900 (Sat, 05 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/AUTHORS
+   M /lang/perl/tiarra/trunk/main/Tiarra/IRC/Message.pm
+   M /lang/perl/tiarra/trunk/module/System/PrivTranslator.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+   M /lang/perl/tiarra/trunk/tiarra
+
+lang/perl/tiarra: * change copyright style.
+------------------------------------------------------------------------
+r8937 | topia | 2008-04-05 23:10:50 +0900 (Sat, 05 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+lang/perl/tiarra: * change copyright style.
+------------------------------------------------------------------------
+r8930 | hio | 2008-04-05 22:27:12 +0900 (Sat, 05 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/LinedINETSocket.pm
+
+lang/perl/tiarra: LinedINETSocket が接続失敗時もinstallされていたバグの修正.
+
+------------------------------------------------------------------------
+r8826 | topia | 2008-04-04 09:37:47 +0900 (Fri, 04 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/System/LivePatch.pm
+
+lang/perl/tiarra: * set mime-type for System::LivePatch.
+------------------------------------------------------------------------
+r8825 | hio | 2008-04-04 09:06:31 +0900 (Fri, 04 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   A /lang/perl/tiarra/trunk/module/System/LivePatch.pm
+
+lang/perl/tiarra: add System::LivePatch.
+
+------------------------------------------------------------------------
+r8810 | topia | 2008-04-03 23:48:46 +0900 (Thu, 03 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/GroupDB.pm
+
+lang/perl/tiarra: * use dup_group instead of clone object method.
+------------------------------------------------------------------------
+r8809 | topia | 2008-04-03 23:47:41 +0900 (Thu, 03 Apr 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/ModuleManager.pm
+
+lang/perl/tiarra: * destruct modules before unloading it.
+------------------------------------------------------------------------
+r8622 | hio | 2008-04-02 00:26:23 +0900 (Wed, 02 Apr 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+コードの整理と見出し抽出の抽象化.
+
+------------------------------------------------------------------------
+r8620 | hio | 2008-04-02 00:16:24 +0900 (Wed, 02 Apr 2008) | 2 lines
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Tools/HTTPClient
+   A /lang/perl/tiarra/trunk/module/Tools/HTTPClient/SSL.pm
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+かなり適当なHTTPClientのSSLサポート.
+
+------------------------------------------------------------------------
+r8435 | elim | 2008-03-27 12:20:36 +0900 (Thu, 27 Mar 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra-conf.el
+   M /lang/perl/tiarra/trunk/tiarra-conf.l
+
+lang/perl/tiarra: set svn:mime-type.
+
+------------------------------------------------------------------------
+r8273 | hio | 2008-03-22 20:45:17 +0900 (Sat, 22 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   A /lang/perl/tiarra/trunk/doc/module/UNCLASSIFIED.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+
+lang/perl/tiarra: update documents
+------------------------------------------------------------------------
+r8272 | hio | 2008-03-22 20:41:58 +0900 (Sat, 22 Mar 2008) | 1 line
+Changed paths:
+   A /lang/perl/tiarra/trunk/module/Auto/FetchTitle.pm
+
+lang/perl/tiarra: new module, Auto::FetchTitle
+------------------------------------------------------------------------
+r8271 | hio | 2008-03-22 20:18:21 +0900 (Sat, 22 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Mask.pm
+
+lang/perl/tiarra: add comment
+------------------------------------------------------------------------
+r8220 | hio | 2008-03-21 01:11:22 +0900 (Fri, 21 Mar 2008) | 4 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/HTTPClient.pm
+
+lang/perl/tiarra: add ProgressCallback, and documents.
+fix, error handring on connect/disconnect failure.
+fix, content body after last CR-LF was lost.
+
+------------------------------------------------------------------------
+r8219 | hio | 2008-03-21 00:59:13 +0900 (Fri, 21 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/Socket/Buffered.pm
+
+lang/perl/tiarra: fix, do not clear recvbuf on detach, it cause data lost
+------------------------------------------------------------------------
+r8217 | hio | 2008-03-21 00:57:24 +0900 (Fri, 21 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Mask.pm
+
+lang/perl/tiarra: add comment for usage of Mask::match
+------------------------------------------------------------------------
+r8216 | hio | 2008-03-21 00:55:04 +0900 (Fri, 21 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/module-group.tdoc
+
+lang/perl/tiarra: add description for unclassified modules
+------------------------------------------------------------------------
+r8215 | hio | 2008-03-21 00:54:28 +0900 (Fri, 21 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/TiarraDoc.pm
+
+lang/perl/tiarra: fix, show UNCLASSIFIED modules in module-toc.html
+------------------------------------------------------------------------
+r8214 | hio | 2008-03-21 00:52:58 +0900 (Fri, 21 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Skelton.pm
+
+lang/perl/tiarra: add document for skelton
+------------------------------------------------------------------------
+r8213 | hio | 2008-03-21 00:46:14 +0900 (Fri, 21 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/makedoc
+
+lang/perl/tiarra: add, =begin tiarra-doc ... =end tiarra-doc style document.
+------------------------------------------------------------------------
+r8081 | hio | 2008-03-18 19:46:39 +0900 (Tue, 18 Mar 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/Answer.pm
+
+lang/perl/tiarra: new parameter channel-reply and answer-to-myself for Auto::Answer
+------------------------------------------------------------------------
+r7640 | otsune | 2008-03-08 01:21:17 +0900 (Sat, 08 Mar 2008) | 2 lines
+Changed paths:
+   A /lang/perl (from /lang/perl:7636)
+
+Resurrected lang/perl from revision 7636
+
+------------------------------------------------------------------------
+r5918 | topia | 2008-01-31 04:00:25 +0900 (Thu, 31 Jan 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/AliasDB.pm
+
+lang/perl/tiarra: * bugfix: use Tools::Hash instance instead of plain hash.
+------------------------------------------------------------------------
+r5917 | topia | 2008-01-31 03:59:36 +0900 (Thu, 31 Jan 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Auto/MesMail.pm
+
+lang/perl/tiarra: * support smtp-auth, and small bugfixes.
+------------------------------------------------------------------------
+r5916 | topia | 2008-01-31 03:58:33 +0900 (Thu, 31 Jan 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend/EachServer.pm
+   M /lang/perl/tiarra/trunk/module/Tools/MailSend.pm
+
+lang/perl/tiarra: * implement SMTP-Auth, but supports PLAIN and LOGIN only.
+------------------------------------------------------------------------
+r5911 | topia | 2008-01-31 01:06:47 +0900 (Thu, 31 Jan 2008) | 1 line
+Changed paths:
+   D /dan/perl/tiarra
+   A /lang/perl/tiarra (from /dan/perl/tiarra:5910)
+
+ふっかつのじゅもんをまちがえていたので、わすれないうちになおす
+------------------------------------------------------------------------
+r5905 | topia | 2008-01-31 00:05:09 +0900 (Thu, 31 Jan 2008) | 2 lines
+Changed paths:
+   A /dan/perl/tiarra (from /lang/perl/tiarra:5903)
+
+なにもおもしろいことが起きなかったので復活の呪文
+
+------------------------------------------------------------------------
+r5680 | drry | 2008-01-28 18:37:58 +0900 (Mon, 28 Jan 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+lang/perl/tiarra/trunk/tiarra: removed a mixed revision number. fixed a white space.
+
+------------------------------------------------------------------------
+r5636 | topia | 2008-01-27 17:52:28 +0900 (Sun, 27 Jan 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Multicast.pm
+
+lang/perl/tiarra/trunk: * BUGFIX: do not global/local nick convertion for TOPIC content.
+------------------------------------------------------------------------
+r4748 | drry | 2008-01-17 04:22:16 +0900 (Thu, 17 Jan 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/tiarra
+
+lang/perl/tiarra/trunk/tiarra: system() が返すのは終了ステータスでした……。うわーん。
+
+------------------------------------------------------------------------
+r4411 | topia | 2008-01-11 12:15:24 +0900 (Fri, 11 Jan 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/all.conf
+   M /lang/perl/tiarra/trunk/doc/module/Auto.html
+   M /lang/perl/tiarra/trunk/doc/module/CTCP.html
+   M /lang/perl/tiarra/trunk/doc/module/Channel.html
+   M /lang/perl/tiarra/trunk/doc/module/Client.html
+   M /lang/perl/tiarra/trunk/doc/module/Debug.html
+   M /lang/perl/tiarra/trunk/doc/module/Log.html
+   M /lang/perl/tiarra/trunk/doc/module/System.html
+   M /lang/perl/tiarra/trunk/doc/module/User.html
+   M /lang/perl/tiarra/trunk/doc/module-toc.html
+   M /lang/perl/tiarra/trunk/sample.conf
+
+lang/perl/tiarra/trunk: * re-generate documentation.
+------------------------------------------------------------------------
+r4410 | topia | 2008-01-11 12:14:37 +0900 (Fri, 11 Jan 2008) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/trunk/doc-src/conf-main.tdoc
+   M /lang/perl/tiarra/trunk/module/System/PrivTranslator.pm
+
+lang/perl/tiarra/trunk: * add caution for bad network-separator to use System::PrivTranslator.
+------------------------------------------------------------------------
+r4404 | drry | 2008-01-11 08:37:30 +0900 (Fri, 11 Jan 2008) | 2 lines
+Changed paths:
+   M /lang/perl/tiarra/trunk/main/Tiarra/IRC/Message.pm
+   M /lang/perl/tiarra/trunk/module/Client/Guess.pm
+   M /lang/perl/tiarra/trunk/tiarra
+
+lang/perl/tiarra/trunk: use system() instead of a backtick oper, etc.
+
+------------------------------------------------------------------------
+r3010 | topia | 2007-12-10 22:36:55 +0900 (Mon, 10 Dec 2007) | 1 line
+Changed paths:
+   D /lang/perl/tiarra/AUTHORS
+   D /lang/perl/tiarra/ChangeLog
+   D /lang/perl/tiarra/ChangeLog.svn
+   D /lang/perl/tiarra/HACKING
+   D /lang/perl/tiarra/INSTALL
+   D /lang/perl/tiarra/LICENSE
+   D /lang/perl/tiarra/Makefile
+   D /lang/perl/tiarra/NEWS
+   D /lang/perl/tiarra/all.conf
+   A /lang/perl/tiarra/branches
+   D /lang/perl/tiarra/bundle
+   D /lang/perl/tiarra/common
+   D /lang/perl/tiarra/doc
+   D /lang/perl/tiarra/doc-src
+   D /lang/perl/tiarra/main
+   D /lang/perl/tiarra/makedoc
+   D /lang/perl/tiarra/module
+   D /lang/perl/tiarra/run
+   D /lang/perl/tiarra/run-main
+   D /lang/perl/tiarra/run-subr
+   D /lang/perl/tiarra/runtiarra.perl
+   D /lang/perl/tiarra/sample.conf
+   D /lang/perl/tiarra/tiarra
+   D /lang/perl/tiarra/tiarra-conf.el
+   D /lang/perl/tiarra/tiarra-conf.l
+   A /lang/perl/tiarra/trunk
+   A /lang/perl/tiarra/trunk/AUTHORS (from /lang/perl/tiarra/AUTHORS:3009)
+   A /lang/perl/tiarra/trunk/ChangeLog (from /lang/perl/tiarra/ChangeLog:3009)
+   A /lang/perl/tiarra/trunk/ChangeLog.svn (from /lang/perl/tiarra/ChangeLog.svn:3009)
+   A /lang/perl/tiarra/trunk/HACKING (from /lang/perl/tiarra/HACKING:3009)
+   A /lang/perl/tiarra/trunk/INSTALL (from /lang/perl/tiarra/INSTALL:3009)
+   A /lang/perl/tiarra/trunk/LICENSE (from /lang/perl/tiarra/LICENSE:3009)
+   A /lang/perl/tiarra/trunk/Makefile (from /lang/perl/tiarra/Makefile:3009)
+   A /lang/perl/tiarra/trunk/NEWS (from /lang/perl/tiarra/NEWS:3009)
+   A /lang/perl/tiarra/trunk/all.conf (from /lang/perl/tiarra/all.conf:3009)
+   A /lang/perl/tiarra/trunk/bundle (from /lang/perl/tiarra/bundle:3009)
+   A /lang/perl/tiarra/trunk/common (from /lang/perl/tiarra/common:3009)
+   A /lang/perl/tiarra/trunk/doc (from /lang/perl/tiarra/doc:3009)
+   A /lang/perl/tiarra/trunk/doc-src (from /lang/perl/tiarra/doc-src:3009)
+   A /lang/perl/tiarra/trunk/main (from /lang/perl/tiarra/main:3009)
+   A /lang/perl/tiarra/trunk/makedoc (from /lang/perl/tiarra/makedoc:3009)
+   A /lang/perl/tiarra/trunk/module (from /lang/perl/tiarra/module:3009)
+   A /lang/perl/tiarra/trunk/run (from /lang/perl/tiarra/run:3009)
+   A /lang/perl/tiarra/trunk/run-main (from /lang/perl/tiarra/run-main:3009)
+   A /lang/perl/tiarra/trunk/run-subr (from /lang/perl/tiarra/run-subr:3009)
+   A /lang/perl/tiarra/trunk/runtiarra.perl (from /lang/perl/tiarra/runtiarra.perl:3009)
+   A /lang/perl/tiarra/trunk/sample.conf (from /lang/perl/tiarra/sample.conf:3009)
+   A /lang/perl/tiarra/trunk/tiarra (from /lang/perl/tiarra/tiarra:3009)
+   A /lang/perl/tiarra/trunk/tiarra-conf.el (from /lang/perl/tiarra/tiarra-conf.el:3009)
+   A /lang/perl/tiarra/trunk/tiarra-conf.l (from /lang/perl/tiarra/tiarra-conf.l:3009)
+
+lang/perl/tiarra: migrate to trunk/branches.
+------------------------------------------------------------------------
+r3009 | topia | 2007-12-10 22:35:53 +0900 (Mon, 10 Dec 2007) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/module/System/Inflate.pm
+   M /lang/perl/tiarra/tiarra
+
+lang/perl/tiarra: fix typo.
+------------------------------------------------------------------------
+r3008 | tokuhirom | 2007-12-10 22:33:19 +0900 (Mon, 10 Dec 2007) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/HACKING
+
+lang/perl/tiarra: fixed typo
+------------------------------------------------------------------------
+r3007 | topia | 2007-12-10 22:22:05 +0900 (Mon, 10 Dec 2007) | 1 line
+Changed paths:
+   M /lang/perl/tiarra/doc/default.css
+
+lang/perl/tiarra: fix import url.
+------------------------------------------------------------------------
+r3004 | topia | 2007-12-10 21:45:39 +0900 (Mon, 10 Dec 2007) | 1 line
+Changed paths:
+   A /lang/perl/tiarra
+   A /lang/perl/tiarra/AUTHORS
+   A /lang/perl/tiarra/ChangeLog
+   A /lang/perl/tiarra/ChangeLog.svn
+   A /lang/perl/tiarra/HACKING
+   A /lang/perl/tiarra/INSTALL
+   A /lang/perl/tiarra/LICENSE
+   A /lang/perl/tiarra/Makefile
+   A /lang/perl/tiarra/NEWS
+   A /lang/perl/tiarra/all.conf
+   A /lang/perl/tiarra/bundle
+   A /lang/perl/tiarra/bundle/Unicode
+   A /lang/perl/tiarra/bundle/Unicode/Japanese.pm
+   A /lang/perl/tiarra/bundle/enum.pm
+   A /lang/perl/tiarra/common
+   A /lang/perl/tiarra/common/run-script
+   A /lang/perl/tiarra/common/run-script/add-rc-once.sh
+   A /lang/perl/tiarra/common/run-script/rc-onces
+   A /lang/perl/tiarra/common/run-script/rc-onces/remove-log.sh
+   A /lang/perl/tiarra/doc
+   A /lang/perl/tiarra/doc/default.css
+   A /lang/perl/tiarra/doc/module
+   A /lang/perl/tiarra/doc/module/Auto.html
+   A /lang/perl/tiarra/doc/module/CTCP.html
+   A /lang/perl/tiarra/doc/module/Channel.html
+   A /lang/perl/tiarra/doc/module/Client.html
+   A /lang/perl/tiarra/doc/module/Debug.html
+   A /lang/perl/tiarra/doc/module/Log.html
+   A /lang/perl/tiarra/doc/module/System.html
+   A /lang/perl/tiarra/doc/module/User.html
+   A /lang/perl/tiarra/doc/module-toc.html
+   A /lang/perl/tiarra/doc-src
+   A /lang/perl/tiarra/doc-src/README
+   A /lang/perl/tiarra/doc-src/all.conf.in
+   A /lang/perl/tiarra/doc-src/conf-main.tdoc
+   A /lang/perl/tiarra/doc-src/contents.html
+   A /lang/perl/tiarra/doc-src/module-group.tdoc
+   A /lang/perl/tiarra/doc-src/module-toc.html
+   A /lang/perl/tiarra/doc-src/sample.conf.in
+   A /lang/perl/tiarra/main
+   A /lang/perl/tiarra/main/BulletinBoard.pm
+   A /lang/perl/tiarra/main/CTCP.pm
+   A /lang/perl/tiarra/main/ChannelInfo.pm
+   A /lang/perl/tiarra/main/Configuration
+   A /lang/perl/tiarra/main/Configuration/Block.pm
+   A /lang/perl/tiarra/main/Configuration/LexicalAnalyzer.pm
+   A /lang/perl/tiarra/main/Configuration/Parser.pm
+   A /lang/perl/tiarra/main/Configuration/Preprocessor.pm
+   A /lang/perl/tiarra/main/Configuration.pm
+   A /lang/perl/tiarra/main/ControlPort.pm
+   A /lang/perl/tiarra/main/Crypt.pm
+   A /lang/perl/tiarra/main/Exception.pm
+   A /lang/perl/tiarra/main/ExternalSocket.pm
+   A /lang/perl/tiarra/main/FunctionalVariable.pm
+   A /lang/perl/tiarra/main/Hook.pm
+   A /lang/perl/tiarra/main/IRCMessage.pm
+   A /lang/perl/tiarra/main/InstantCapsule.pm
+   A /lang/perl/tiarra/main/IrcIO
+   A /lang/perl/tiarra/main/IrcIO/Client.pm
+   A /lang/perl/tiarra/main/IrcIO/Server.pm
+   A /lang/perl/tiarra/main/IrcIO.pm
+   A /lang/perl/tiarra/main/Iterator
+   A /lang/perl/tiarra/main/Iterator/ArrayIterator.pm
+   A /lang/perl/tiarra/main/Iterator/BackwardIterator.pm
+   A /lang/perl/tiarra/main/Iterator/BidirectionalIterator.pm
+   A /lang/perl/tiarra/main/Iterator/ForwardIterator.pm
+   A /lang/perl/tiarra/main/Iterator/RandomAccessIterator.pm
+   A /lang/perl/tiarra/main/Iterator/RoundIterator.pm
+   A /lang/perl/tiarra/main/Iterator.pm
+   A /lang/perl/tiarra/main/L10N.pm
+   A /lang/perl/tiarra/main/LinedINETSocket.pm
+   A /lang/perl/tiarra/main/LocalChannelManager.pm
+   A /lang/perl/tiarra/main/Mask.pm
+   A /lang/perl/tiarra/main/Module
+   A /lang/perl/tiarra/main/Module/Use.pm
+   A /lang/perl/tiarra/main/Module.pm
+   A /lang/perl/tiarra/main/ModuleManager.pm
+   A /lang/perl/tiarra/main/Multicast.pm
+   A /lang/perl/tiarra/main/NumericReply.pm
+   A /lang/perl/tiarra/main/PersonInChannel.pm
+   A /lang/perl/tiarra/main/PersonalInfo.pm
+   A /lang/perl/tiarra/main/ReloadTrigger.pm
+   A /lang/perl/tiarra/main/RunLoop.pm
+   A /lang/perl/tiarra/main/Template.pm
+   A /lang/perl/tiarra/main/Tiarra
+   A /lang/perl/tiarra/main/Tiarra/DefineEnumMixin.pm
+   A /lang/perl/tiarra/main/Tiarra/Encoding
+   A /lang/perl/tiarra/main/Tiarra/Encoding/Encode
+   A /lang/perl/tiarra/main/Tiarra/Encoding/Encode/CP932JIS.pm
+   A /lang/perl/tiarra/main/Tiarra/Encoding/Encode.pm
+   A /lang/perl/tiarra/main/Tiarra/Encoding/UniJP.pm
+   A /lang/perl/tiarra/main/Tiarra/Encoding.pm
+   A /lang/perl/tiarra/main/Tiarra/IRC
+   A /lang/perl/tiarra/main/Tiarra/IRC/Message.pm
+   A /lang/perl/tiarra/main/Tiarra/IRC/NewMessageMixin.pm
+   A /lang/perl/tiarra/main/Tiarra/IRC/Prefix.pm
+   A /lang/perl/tiarra/main/Tiarra/Mixin
+   A /lang/perl/tiarra/main/Tiarra/Mixin/AttachPackage.pm
+   A /lang/perl/tiarra/main/Tiarra/Mixin/NewIRCMessage.pm
+   A /lang/perl/tiarra/main/Tiarra/ModifiedFlagMixin.pm
+   A /lang/perl/tiarra/main/Tiarra/OptionalModules.pm
+   A /lang/perl/tiarra/main/Tiarra/Resolver.pm
+   A /lang/perl/tiarra/main/Tiarra/SessionMixin.pm
+   A /lang/perl/tiarra/main/Tiarra/SharedMixin.pm
+   A /lang/perl/tiarra/main/Tiarra/ShorthandConfMixin.pm
+   A /lang/perl/tiarra/main/Tiarra/Socket
+   A /lang/perl/tiarra/main/Tiarra/Socket/Buffered.pm
+   A /lang/perl/tiarra/main/Tiarra/Socket/Connect.pm
+   A /lang/perl/tiarra/main/Tiarra/Socket/Lined.pm
+   A /lang/perl/tiarra/main/Tiarra/Socket/Win32Errno.pm
+   A /lang/perl/tiarra/main/Tiarra/Socket.pm
+   A /lang/perl/tiarra/main/Tiarra/TerminateManager.pm
+   A /lang/perl/tiarra/main/Tiarra/Utils
+   A /lang/perl/tiarra/main/Tiarra/Utils/CallWrapper.pm
+   A /lang/perl/tiarra/main/Tiarra/Utils/Core.pm
+   A /lang/perl/tiarra/main/Tiarra/Utils/DefineHelper.pm
+   A /lang/perl/tiarra/main/Tiarra/Utils.pm
+   A /lang/perl/tiarra/main/Tiarra/WrapMainLoop.pm
+   A /lang/perl/tiarra/main/TiarraDoc.pm
+   A /lang/perl/tiarra/main/Timer.pm
+   A /lang/perl/tiarra/makedoc
+   A /lang/perl/tiarra/module
+   A /lang/perl/tiarra/module/Auto
+   A /lang/perl/tiarra/module/Auto/Alias.pm
+   A /lang/perl/tiarra/module/Auto/AliasDB
+   A /lang/perl/tiarra/module/Auto/AliasDB/CallbackUtils.pm
+   A /lang/perl/tiarra/module/Auto/AliasDB.pm
+   A /lang/perl/tiarra/module/Auto/Answer.pm
+   A /lang/perl/tiarra/module/Auto/CacheManager.pm
+   A /lang/perl/tiarra/module/Auto/Calc.pm
+   A /lang/perl/tiarra/module/Auto/ChannelWithoutOper.pm
+   A /lang/perl/tiarra/module/Auto/Joined.pm
+   A /lang/perl/tiarra/module/Auto/MesMail.pm
+   A /lang/perl/tiarra/module/Auto/Oper.pm
+   A /lang/perl/tiarra/module/Auto/Random.pm
+   A /lang/perl/tiarra/module/Auto/Reply.pm
+   A /lang/perl/tiarra/module/Auto/Response.pm
+   A /lang/perl/tiarra/module/Auto/Utils.pm
+   A /lang/perl/tiarra/module/CTCP
+   A /lang/perl/tiarra/module/CTCP/ClientInfo.pm
+   A /lang/perl/tiarra/module/CTCP/Ping.pm
+   A /lang/perl/tiarra/module/CTCP/Time.pm
+   A /lang/perl/tiarra/module/CTCP/UserInfo.pm
+   A /lang/perl/tiarra/module/CTCP/Version.pm
+   A /lang/perl/tiarra/module/Channel
+   A /lang/perl/tiarra/module/Channel/Freeze.pm
+   A /lang/perl/tiarra/module/Channel/Ignore.pm
+   A /lang/perl/tiarra/module/Channel/Join
+   A /lang/perl/tiarra/module/Channel/Join/Connect.pm
+   A /lang/perl/tiarra/module/Channel/Join/Invite.pm
+   A /lang/perl/tiarra/module/Channel/Join/Kicked.pm
+   A /lang/perl/tiarra/module/Channel/Mode
+   A /lang/perl/tiarra/module/Channel/Mode/Get.pm
+   A /lang/perl/tiarra/module/Channel/Mode/Oper
+   A /lang/perl/tiarra/module/Channel/Mode/Oper/Grant.pm
+   A /lang/perl/tiarra/module/Channel/Mode/Set.pm
+   A /lang/perl/tiarra/module/Channel/Rejoin.pm
+   A /lang/perl/tiarra/module/Client
+   A /lang/perl/tiarra/module/Client/Cache.pm
+   A /lang/perl/tiarra/module/Client/Conservative.pm
+   A /lang/perl/tiarra/module/Client/Cotton.pm
+   A /lang/perl/tiarra/module/Client/Eval.pm
+   A /lang/perl/tiarra/module/Client/GetVersion.pm
+   A /lang/perl/tiarra/module/Client/Guess.pm
+   A /lang/perl/tiarra/module/Client/PatchworkMessage.pm
+   A /lang/perl/tiarra/module/Client/ProtectMyself.pm
+   A /lang/perl/tiarra/module/Client/Rehash.pm
+   A /lang/perl/tiarra/module/Client/ShowNick.pm
+   A /lang/perl/tiarra/module/Debug
+   A /lang/perl/tiarra/module/Debug/AliasTest.pm
+   A /lang/perl/tiarra/module/Debug/RawLog.pm
+   A /lang/perl/tiarra/module/Log
+   A /lang/perl/tiarra/module/Log/Channel.pm
+   A /lang/perl/tiarra/module/Log/ChannelList.pm
+   A /lang/perl/tiarra/module/Log/Logger.pm
+   A /lang/perl/tiarra/module/Log/Raw.pm
+   A /lang/perl/tiarra/module/Log/Recent.pm
+   A /lang/perl/tiarra/module/Log/Writer
+   A /lang/perl/tiarra/module/Log/Writer/Base.pm
+   A /lang/perl/tiarra/module/Log/Writer/File.pm
+   A /lang/perl/tiarra/module/Log/Writer.pm
+   A /lang/perl/tiarra/module/Skelton.pm
+   A /lang/perl/tiarra/module/System
+   A /lang/perl/tiarra/module/System/Error.pm
+   A /lang/perl/tiarra/module/System/Inflate
+   A /lang/perl/tiarra/module/System/Inflate/Gzip.pm
+   A /lang/perl/tiarra/module/System/Inflate/Zlib.pm
+   A /lang/perl/tiarra/module/System/Inflate.pm
+   A /lang/perl/tiarra/module/System/Macro.pm
+   A /lang/perl/tiarra/module/System/NotifyIcon
+   A /lang/perl/tiarra/module/System/NotifyIcon/Win32.pm
+   A /lang/perl/tiarra/module/System/Pong.pm
+   A /lang/perl/tiarra/module/System/PrivTranslator.pm
+   A /lang/perl/tiarra/module/System/Raw.pm
+   A /lang/perl/tiarra/module/System/Reload.pm
+   A /lang/perl/tiarra/module/System/RemoteControl.pm
+   A /lang/perl/tiarra/module/System/SendMessage.pm
+   A /lang/perl/tiarra/module/System/Shutdown.pm
+   A /lang/perl/tiarra/module/Tools
+   A /lang/perl/tiarra/module/Tools/DateConvert.pm
+   A /lang/perl/tiarra/module/Tools/FileCache
+   A /lang/perl/tiarra/module/Tools/FileCache/EachFile.pm
+   A /lang/perl/tiarra/module/Tools/FileCache.pm
+   A /lang/perl/tiarra/module/Tools/GroupDB.pm
+   A /lang/perl/tiarra/module/Tools/HTTPClient.pm
+   A /lang/perl/tiarra/module/Tools/Hash.pm
+   A /lang/perl/tiarra/module/Tools/HashDB.pm
+   A /lang/perl/tiarra/module/Tools/HashTools.pm
+   A /lang/perl/tiarra/module/Tools/LinedDB.pm
+   A /lang/perl/tiarra/module/Tools/MailSend
+   A /lang/perl/tiarra/module/Tools/MailSend/EachServer.pm
+   A /lang/perl/tiarra/module/Tools/MailSend.pm
+   A /lang/perl/tiarra/module/User
+   A /lang/perl/tiarra/module/User/Away
+   A /lang/perl/tiarra/module/User/Away/Client.pm
+   A /lang/perl/tiarra/module/User/Away/Nick.pm
+   A /lang/perl/tiarra/module/User/Filter.pm
+   A /lang/perl/tiarra/module/User/Ignore.pm
+   A /lang/perl/tiarra/module/User/Kick.pm
+   A /lang/perl/tiarra/module/User/Nick
+   A /lang/perl/tiarra/module/User/Nick/Detached.pm
+   A /lang/perl/tiarra/module/User/ServerOper.pm
+   A /lang/perl/tiarra/module/User/Vanish.pm
+   A /lang/perl/tiarra/run
+   A /lang/perl/tiarra/run-main
+   A /lang/perl/tiarra/run-subr
+   A /lang/perl/tiarra/runtiarra.perl
+   A /lang/perl/tiarra/sample.conf
+   A /lang/perl/tiarra/status
+   A /lang/perl/tiarra/status/merged-tag
+   A /lang/perl/tiarra/test
+   A /lang/perl/tiarra/test/dateconvert-test.perl
+   A /lang/perl/tiarra/test/inflate-test.perl
+   A /lang/perl/tiarra/tiarra
+   A /lang/perl/tiarra/tiarra-conf.el
+   A /lang/perl/tiarra/tiarra-conf.l
+   A /lang/perl/tiarra/tools
+   A /lang/perl/tiarra/tools/archive.perl
+   A /lang/perl/tiarra/tools/ezpack.config
+   A /lang/perl/tiarra/tools/merge.sh
+   A /lang/perl/tiarra/tools/update.sh
+   A /lang/perl/tiarra/tools/upload.sh
+
+lang/perl/tiarra: import.
+------------------------------------------------------------------------
